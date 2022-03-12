@@ -1,0 +1,219 @@
+* {
+    font-family: "DM Sans";
+}
+
+header, nav, main,footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, main{
+    display: flex;
+}
+
+header h1{
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 0.25em;
+    width: 90%;
+    text-align: center;
+}
+
+header a {
+    width: 10%;
+    margin: 1em;
+}
+
+header img {
+    width: 100%;
+}
+
+.articulo {
+    width: 20%;
+    text-align: center;
+}
+
+.articulo h3, .articulo p{
+    margin: 0.3em;
+}
+
+section img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+aside h1{
+    text-align: center;
+}
+
+.auxiliar { 
+    flex-wrap: wrap;
+    background-color: #ADD9D1;
+    padding: 1em;
+}
+
+.art {
+    margin: 1em;
+}
+
+
+section{
+    width: 80%;
+}
+
+aside{
+    width: 20%;
+}
+
+.publicaciones ,.publicaciones_activa, .auxiliar{
+    display: flex;
+}
+
+.publicaciones, .publicaciones_activa {
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.publicaciones{
+    background-color: #f5b591;
+}
+
+.publicaciones_activa {
+    background-color: #f8b5af;
+}
+
+
+.contenido, .auxiliar {
+    margin: 1.5em;
+}
+
+nav ul{
+    background-color: #ADD9D1;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
+
+nav li{
+    flex: auto;
+}
+
+main h1, nav li{
+    font-family: "DM Sans";
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.menu-control{
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.articulo:hover {
+	font-size: 1.2em;
+}
+
+/* .articulo img:hover {
+	width: 100%;
+} */
+
+footer {
+    background-color: #ADD9D1;
+}
+
+.copyright{
+    width: 50%;
+    float: left;
+}
+
+.copyright p {
+    margin-left: 2em;
+}
+
+.social a {
+    margin-right: 1em;
+}
+
+.social {
+    margin: 2em;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.redes{
+    margin: 1em;
+}
+
+.social img{
+    width: 1.5em;
+}
+
+
+@media only screen and (min-width: 220px) and (max-width: 920px){
+
+    header img {
+        width: 5em;
+        margin: 1em;
+    }
+
+    header h1{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    nav ul{
+        font-size: 60%;
+        margin: 0;
+        text-align: inherit;
+    }
+
+    main h1{
+        font-size:80%;
+    }
+
+    section{
+        width: 60%;
+    }
+
+    aside{
+        width: 40%;
+    }
+
+    .articulo{
+        width: 100%;
+    }
+
+    section img {
+        padding-bottom: 1em;
+    }
+
+    .auxiliar{
+        padding: 0;
+    }
+
+    .art {
+        margin: 0.1em;
+    }
+
+
+}
+
