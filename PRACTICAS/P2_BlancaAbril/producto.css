@@ -1,0 +1,296 @@
+/* LOS COLORES ELEGIDOS SON EN BASE A LA PALETA DE COLORES DEL LOGO */
+
+* {
+    font-family: "DM Sans";
+}
+
+/* Los elementos principales tengan width 100%  */
+header, nav, main,footer, header img{
+    width: 100%;
+}
+
+/* Contenedor padre con flex */
+header, main, .auxiliar, .contenido, nav ul, .social, .publicaciones{
+    display: flex;
+}
+
+/* Letra grande y mayuscula para los titulos del menu y del cuerpo */
+nav li, main h1{
+    font-size: x-large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Establecer tamaño y mayuscula. Además se establece el espacio entre letras  */
+header h1{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 0.25em;
+    width: 100%;
+}
+
+
+header a {
+    width: 10%;
+    margin: 1em;
+}
+
+
+/* Establecemos el fondo, le indicamos la propiedad flex, con el list-style no mostramos el puntito de la enumeracion y alineamos al centro con el text-align. Por último,
+establecemos los margenes y el contenido alrededor  */
+nav ul{
+    background-color: #ADD9D1;
+    list-style-type: none;
+    text-align: center;
+    margin: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
+
+nav li{
+    flex: auto;
+}
+
+/* Color y decoracion de los enlaces */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Establecemos el fondo del pie */
+footer {
+    background-color: #ADD9D1;
+}
+
+.copyright{
+    width: 50%;
+    float: left;
+}
+
+.copyright p {
+    margin-left: 2em;
+}
+
+/* Establecemos el margen, la forma en la que se colocan los iconos, en este caso desde el final */
+.social a {
+    margin-right: 1em;
+}
+
+.social {
+    margin: 2em;
+    width: 50%;
+    justify-content: end;
+
+}
+
+.redes{
+    margin: 1em;
+}
+
+.social img{
+    width: 1.5em;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+}
+
+aside h1{
+    text-align: center;
+}
+
+.contenido, .auxiliar, .ficha, .sinopsis, .otros_libros, .comentarios, .container{
+    margin: 1.5em;
+}
+
+/* Propiedades, donde ponemos las letras en mayuscula, el fondo, y un borde doble con ridge y el color es un poco más oscuro que el fondo  */
+.informacion {
+	width: 100%;
+	text-align: center;
+    text-transform: uppercase;
+	margin: auto;
+	background-color: #f8b5af;
+	font-size: small;
+	border-style: ridge;
+	border-color: #f8b5af;
+}
+
+.imagenes {
+    margin: 2em;
+}
+
+/* Con el flex-wrap, los hijos son colocados en varias lineas, establecemos el espacio alrededor y el fondo*/
+.auxiliar { 
+    flex-wrap: wrap;
+    background-color: #ADD9D1;
+    padding: 1em;
+
+}
+
+.art {
+    margin: 1em;
+}
+
+/* Establecemos el ancho de cada elementos */
+section{
+    width: 80%;
+}
+
+section img {
+    width: 100%;
+}
+
+aside{
+    width: 20%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+
+}
+
+/* Propiedades de la tabla */
+table th {
+    border: ridge 2px #f5b591;
+    background-color: #f5b591;
+}
+
+table td{
+    border: ridge 2px #f5b591;
+}
+
+/* Con el flex-wrap, los hijos son colocados en varias lineas, establecemos el espacio alrededor */
+.publicaciones{
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.publicaciones div{
+    margin:0px auto;
+}
+
+.publicaciones img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+/* Establecemos el tamaño del carrito */
+.carrito img{
+    width: 2em;
+}
+
+/* COMENTARIOS CAJA */
+
+.comentarios img{
+    width: 1.5em;
+}
+
+.btn img {  
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.btn, .cajacom, input[type=text], select, textarea, input[type=email] {
+    background-color: #f5b591;
+    border: ridge 2px #f5b591;
+}
+
+.cajacom {
+    margin-top: 2em;
+    padding: 0.5em;
+}
+
+.cajacom h2{
+    font-size: large;
+}
+
+input[type=text], select, textarea, input[type=email]{
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+}
+
+form label{
+    font-size:large;
+}
+
+.enviar { 
+    text-align: center;
+}
+
+.enviar input {
+    margin-top: 2em;
+    font-size: medium;
+}
+
+
+  
+
+/* CSS PARA MOVIL */
+
+@media only screen and (min-width: 220px) and (max-width: 920px){
+
+    /* Hacer la imagen un poco mas grande */
+    header img {
+        width: 5em;
+        margin: 1em;
+    }
+
+    /* Centrar el titulo y hacer un poco más pequeño */
+    header h1{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    /* Letra más pequeña y quitar los margenes*/
+    nav ul{
+        margin: 0;
+    }
+
+    nav li{
+        font-size: medium;
+    }
+
+    /* Adaptar las secciones */
+    .informacion {
+        font-size: x-small;
+    }
+    main h1{
+        font-size:medium;
+    }
+
+    /* adaptar las secciones */
+    section{
+        width: 60%;
+    }
+
+    aside{
+        width: 40%;
+    }
+
+    section img {
+        padding-bottom: 1em;
+        
+    }
+    
+    .contenido {
+        display: block;
+    }
+    .auxiliar{
+        padding: 0;
+    }
+
+    .art {
+        margin: 0.1em;
+    }
+
+
+}

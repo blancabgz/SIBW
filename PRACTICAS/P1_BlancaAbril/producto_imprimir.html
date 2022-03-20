@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HEREDAMOS EL CSS DE PRODUCTO Y AÑADIMOS UN CSS NUEVO (PRODUCTO_IMPRIMIR.CSS) PARA INCLUIR LAS OPCIONES -->
+    <link href="producto_imprimir.css" rel="stylesheet" type="text/css" />
+    <link href="producto.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+    <title>Imprimir</title>
+</head>
+<body>
+    <header>
+        <a href="./portada.html"><img src="./img/logo.png" alt="Home"></a>
+        <h1>Librería Livingstone</h1>
+    </header>
+    <!-- BARRA DE NAVEGACION -->
+    <nav>       
+        <ul id="enlaces">
+            <li><a href="./portada.html">Inicio</a></li>
+            <li><a href="">Ebooks</a></li>
+            <li><a href="">Novedades</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="contenido">
+                <div class="imagenes">
+                    <img src="./img/libro1.jpg" alt="Fulgor">
+                </div>
+                <div class="informacion">   
+                    <h1>Fulgor</h1>
+                    <h2>Tracy Wolff</h2>
+                    <h3>19.50€</h3>
+                    <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                </div>
+                
+            </div>
+            
+            <!-- Tabla que contiene información importante sobre el libro -->
+            <div class="ficha">
+                <h1>Ficha</h1>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Editorial</th>
+                        <th>Páginas</th>
+                        <th>Género</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Fulgor</td>
+                        <td>Tracy Wolff</td>
+                        <td>Planeta</td>
+                        <td>960</td>
+                        <td>Fantasía</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sinopsis">
+                <h1>Sinopsis</h1>
+                <p>Nadie sobrevivió ileso a la última batalla. Flint está enfadado con el mundo, Jaxon se está convirtiendo en algo que no reconozco, y Hudson ha levantado un muro que no estoy segura de poder romper.</p>
+                <p>Ahora se acerca una guerra y no estamos listos. Necesitaríamos un ejército para tener alguna esperanza de ganar. Pero antes de eso necesito encontrar respuestas a las incógnitas sobre mis antepasados. Respuestas que podrían revelar quién es el verdadero monstruo entre nosotros… en un mundo lleno de vampiros sedientos de sangre, gárgolas inmortales y una antigua batalla entre dos dioses.</p>
+                <p>No hay garantía de que nadie se quede en pie cuando el polvo se asiente, pero si queremos salvar este mundo, no tengo otra opción. Tendré que abrazar cada parte de mí ... incluso las partes que más temo. </p>
+            </div>
+           
+            <div class="otros_libros">
+                <h1>Otros libros que te pueden gustar</h1>
+                <div class="publicaciones">
+                    <div>
+                        <img class="libro" src="./img/libro1.jpg" alt="Fulgor">
+                        <h3>Fulgor</h3>
+                        <p>Tracy Wolff</p>
+                        <p>19.50€</p>
+                        <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                    
+                    </div>
+
+                    <div>
+                        <img class="libro" src="./img/libro2.jpg" alt="Un reino de carne y fuego">
+                        <h3>Un reino de carne y fuego</h3>
+                        <p>Sarah J Mass</p>
+                        <p>20.42€</p>
+                        <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                    </div>
+
+                    <div>
+                        <img class="libro" src="./img/libro3.jpg" alt="La espada de la asesina">
+                        <h3>La espada de la asesina</h3>
+                        <p>Sarah J Mass</p>
+                        <p>17.57€</p>
+                        <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                    </div>
+
+                    <div>
+                        <img class="libro" src="./img/libro7.jpg" alt="Casa de cielo y aliento">
+                        <h3>Casa de cielo y aliento</h3>
+                        <p>Sarah J Mass</p>
+                        <p>18.95€</p>
+                        <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                    </div>
+
+
+                    <div>
+                        <img class="libro" src="./img/libro10.jpg" alt="Anhelo">
+                        <h3>Anhelo</h3>
+                        <p>Tracy Wolff</p>
+                        <p>18.95€</p>
+                        <a class="carrito" href=""><img src="./img/carrito.png" alt=""></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+                
+        </section>
+        <!-- ZONA AUXILIAR -->
+        <aside>
+            <div class="auxiliar">
+                <div class="art">
+                    <h1>Compra online, recoge en libreria</h1>
+                    <img src="./img/libreria.jpg" alt="Recoge en libreria">
+                </div>
+
+                <div class="art">
+                    <h1>Llévate los mejores libros firmados</h1>
+                    <img src="./img/firma.jpg" alt="Firmado">
+                </div>
+
+                <div class="art">
+                    <h1>Hazte socio</h1>
+                    <img src="./img/socio.jpeg" alt="Socia">
+                </div>
+            </div>
+            
+        </aside>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy;2022 - Blanca Abril Gonzalez</p>
+        </div>
+
+        <div class="social">
+            <a href="mailto:blancabril@correo.ugr.es" class="redes"><img src="./img/gmail.png" alt="Correo"></a>
+            <a href="https://es-es.facebook.com/" class="redes"><img src="./img/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" class="redes"><img src="./img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" class="redes"><img src="./img/instagram.png" alt="Instagram"></a>
+            <a href="./producto_imprimir.html" class="redes"><img src="./img/impresora.png" alt="Imprimir"></a>
+        </div>
+    </footer>
+</body>
+</html>
