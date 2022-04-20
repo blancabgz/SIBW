@@ -81,14 +81,18 @@
                     <h1>Comentarios</h1>
                     <div class="cajacom">
                         <h2>Blanca Abril</h2>
-                        <span>17-03-2022</span>
-                        <span>17:30</span>
+                        <div class="fyh">
+                            <p>17-03-2022</p>
+                            <p>17:30</p>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus ratione, maiores, maxime molestiae, a quam illo excepturi distinctio ipsum esse? Laborum harum accusamus ut suscipit. Quod, explicabo asperiores! Reiciendis.</p>
                     </div>
                     <div class="cajacom">
                         <h2>Blanca Abril</h2>
-                        <span>17-03-2022</span>
-                        <span>17:30</span>
+                        <div class="fyh">
+                            <p>17-03-2022</p>
+                            <p>17:30</p>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium laudantium quis voluptate eius excepturi soluta? Adipisci possimus tempora, consectetur ab, voluptate at dicta rerum minima ducimus velit unde modi.</p>
                     </div>
 
@@ -98,11 +102,12 @@
 
             <h1>Danos tu opinión</h1>
             <div class="container">
-                <p>Los campos con (*) son obligatorios</p>
-                <form action="/" method="get" id="formulario">
+                <p>Los campos con (**) son obligatorios</p>
+                <p>En el texto, cuando aparece (*) es que se trata de una palabra prohibida</p>
+                <form action="/" id="formulario">
                     <div class="row">
                         <div class="col-25">
-                        <label for="nombre">Nombre (*)</label>
+                        <label for="nombre">Nombre (**)</label>
                         </div>
                         <div class="col-75">
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre">
@@ -110,7 +115,7 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                        <label for="email">Email (*)</label>
+                        <label for="email">Email (**)</label>
                         </div>
                         <div class="col-75">
                         <input type="email" id="email" name="email" placeholder="nombre@email.com">
@@ -118,14 +123,14 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                        <label for="comentario">Comentario (*)</label>
+                        <label for="comentario">Comentario (**)</label>
                         </div>
                         <div class="col-75">
-                        <textarea id="comentario" name="subject" placeholder="Cuentanos que te ha parecido el libro ..." style="height:200px"></textarea>
+                        <textarea id="comentario" name="subject" placeholder="Cuentanos que te ha parecido el libro ..." style="height:200px" oninput="revisarComentario()"></textarea>
                         </div>
                     </div>
                     <div class="row enviar">
-                        <input class="btn" type="submit" value="Enviar">
+                        <input class="btn" type="button" onclick="validarFormulario()" value="Enviar">
                     </div>
                     </form>
             </div>

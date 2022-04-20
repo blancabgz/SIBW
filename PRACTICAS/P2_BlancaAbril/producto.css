@@ -231,6 +231,14 @@ form label{
     font-size: medium;
 }
 
+.fyh{
+    display: flex;
+}
+
+.fyh p{
+    padding-right: 1%;
+    margin: 0;
+}
 
   
 
